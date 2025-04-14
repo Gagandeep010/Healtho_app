@@ -7,6 +7,7 @@ import 'package:healtho/screen/home/top_tab_view/exercises/exercises_tab_screen.
 import 'package:healtho/screen/home/top_tab_view/health_tip/health_tip_screen.dart';
 import 'package:healtho/screen/home/top_tab_view/trainer/trainer_tab_screen.dart';
 import 'package:healtho/screen/home/top_tab_view/workout_plan/workout_plan_screen.dart';
+import 'package:healtho/screen/home/top_tab_view/meditation/meditation_tab_screen.dart';
 
 class TopTabViewScreen extends StatefulWidget {
   const TopTabViewScreen({super.key});
@@ -19,6 +20,7 @@ class _TopTabViewScreenState extends State<TopTabViewScreen>
     with SingleTickerProviderStateMixin {
   var tapArr = [
     "Health Tips",
+    "Meditation",
     "Exercises",
     "Workout Plan",
     "Challenges",
@@ -96,6 +98,7 @@ class _TopTabViewScreenState extends State<TopTabViewScreen>
               controller: controller,
               children: const [
                 HealthTipScreen(),
+                MeditationScreen(),
                 ExercisesScreen(),
                 WorkoutPlanScreen(),
                 ChallengesScreen(),
